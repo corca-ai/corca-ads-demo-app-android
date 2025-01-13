@@ -111,7 +111,7 @@ class MockProductListAdapter(
         private fun impression(position: Int) {
             if (position in 0 until itemCount) {
                 val item = getItem(position)
-                // 기준3. 이미 기록된 상품은 재기록하지 않습니다.
+                // 기준3. 동일한 [requestId, adsetId] 조합으로 이미 로깅된 노출은 재로깅하지 않습니다.
                 if (!hasImpression(item.adsetId)) {
                     onImpressionItem(
                         LogOptions(
