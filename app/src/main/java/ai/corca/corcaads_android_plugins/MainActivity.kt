@@ -1,7 +1,7 @@
 package ai.corca.corcaads_android_plugins
 
 import ai.corca.adcio_android_plugins.databinding.ActivityMainBinding
-import ai.corca.corcaads_android_plugins.corca_ads_demo.SuggestionActivity
+import ai.corca.corcaads_android_plugins.corca_ads_demo.presentation.SuggestionActivity
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle

@@ -52,8 +52,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.google.firebase:firebase-dataconnect:16.0.0-alpha05")
 
+    implementation("com.google.firebase:firebase-dataconnect:16.0.0-alpha05")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -72,5 +72,8 @@ dependencies {
 
     implementation ("com.amplitude:analytics-android:1.18.0")
     implementation("com.amplitude:android-sdk:3.35.1")
-    implementation(project(":corca_ads_analytics"))
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
 }

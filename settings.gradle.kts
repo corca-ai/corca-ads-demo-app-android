@@ -14,5 +14,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "adcio_android_plugins"
 include(":app")
-include(":corca_ads_analytics")
-include(":core")

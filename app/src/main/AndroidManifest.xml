@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ai.corca.corcaads_android_plugins.corca_ads_demo.SuggestionActivity" />
+        <activity android:name="ai.corca.corcaads_android_plugins.corca_ads_demo.presentation.SuggestionActivity" />
     </application>
 
 </manifest>
