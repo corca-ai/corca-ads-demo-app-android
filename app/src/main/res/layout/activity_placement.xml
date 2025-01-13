@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".suggestion.PlacementActivity">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_appbar"
@@ -17,7 +16,7 @@
             android:id="@+id/tv_placement_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ADCIO placement demo"
+            android:text="Corca Ads placement demo"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

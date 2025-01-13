@@ -15,16 +15,7 @@
         android:theme="@style/Theme.Adcio_android_plugins"
         tools:targetApi="31">
         <activity
-            android:name=".agent.ui.SecondActivity"
-            android:exported="false" />
-        <activity
-            android:name=".agent.ui.ComposeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".agent.ui.XmlActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name="ai.corca.corcaads_android_plugins.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,8 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".suggestion.SuggestionActivity" />
-        <activity android:name=".agent.AgentActivity" />
+        <activity android:name="ai.corca.corcaads_android_plugins.corca_ads_demo.SuggestionActivity" />
     </application>
 
 </manifest>

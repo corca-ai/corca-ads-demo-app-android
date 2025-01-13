@@ -4,49 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context="ai.corca.corcaads_android_plugins.MainActivity">
     <Button
-        android:id="@+id/btn_core"
+        android:id="@+id/btn_placement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_placement"
-        android:text="core 테스트 페이지로 이동" />
-
-
-    <Button
-        android:id="@+id/btn_placement"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/btn_core"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_agent"
-        android:text="placement 테스트 페이지로 이동" />
-
-    <Button
-        android:id="@+id/btn_agent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/material_dynamic_primary30"
-        app:layout_constraintTop_toBottomOf="@id/btn_placement"
-        app:layout_constraintStart_toStartOf="@id/btn_placement"
-        app:layout_constraintEnd_toEndOf="@id/btn_placement"
-        app:layout_constraintBottom_toTopOf="@id/btn_analytics"
-        android:text="agent 테스트 페이지로 이동" />
-
-    <Button
-        android:id="@+id/btn_analytics"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/material_dynamic_primary60"
-        app:layout_constraintTop_toBottomOf="@id/btn_agent"
-        app:layout_constraintStart_toStartOf="@id/btn_placement"
-        app:layout_constraintEnd_toEndOf="@id/btn_placement"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="analytics 테스트 페이지로 이동" />
+        android:text="데모 페이지로 이동" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

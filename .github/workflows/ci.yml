@@ -1,4 +1,4 @@
-name: ADCIO Android Plugins CI
+name: Corca Ads Android Plugins CI
 on:
   push:
     branches: [ main, develop ]
