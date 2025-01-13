@@ -54,7 +54,6 @@ class MockProductListAdapter(
             }
         }
 
-        // Check screen 50% of the time for more than 1 second
         fun startVisibilityCheck() {
             if (visibleItemsMap.containsKey(adapterPosition)) return
 
@@ -66,6 +65,7 @@ class MockProductListAdapter(
                         return
                     }
 
+                    // 기준1. 관찰 대상의 50% 이상이 UI에 보여야 합니다.
                     if (isViewVisibleForAtLeast50Percent(binding.root)) {
                         if (!startTimeMap.containsKey(position)) {
                             startTimeMap[position] = System.currentTimeMillis()
@@ -73,6 +73,8 @@ class MockProductListAdapter(
 
                         val currentTime = System.currentTimeMillis()
                         val startTime = startTimeMap[position] ?: currentTime
+
+                        // 기준2. 1초 이상 노출된 상품만 기록됩니다.
                         if (currentTime - startTime >= 1000) {
                             impression(position)
                             stopVisibilityCheck()
@@ -109,8 +111,7 @@ class MockProductListAdapter(
         private fun impression(position: Int) {
             if (position in 0 until itemCount) {
                 val item = getItem(position)
-                // Impression should only run once after the screen is launched.
-                // This logic prevents Impression from being called multiple times
+                // 기준3. 이미 기록된 상품은 재기록하지 않습니다.
                 if (!hasImpression(item.adsetId)) {
                     onImpressionItem(
                         LogOptions(
